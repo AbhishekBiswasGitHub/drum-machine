@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import DrumPads from "./DrumPads";
+
 import "./App.css";
 
 const App = () => {
@@ -9,7 +11,11 @@ const App = () => {
     setDisplay(id);
   };
 
-  return <div id="drum-machine"></div>;
+  return (
+    <div id="drum-machine">
+      <DrumPads handleDisplay={handleDisplay} />
+    </div>
+  );
 };
 
 export default App;
