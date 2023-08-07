@@ -2,6 +2,8 @@ import { useEffect } from "react";
 
 import PropTypes from "prop-types";
 
+import DrumPad from "./DrumPad";
+
 import "./DrumPads.css";
 
 const drumPads = [
@@ -71,7 +73,19 @@ const DrumPads = ({ handleDisplay }) => {
     );
   });
 
-  return <div id="drum-pads"></div>;
+  return (
+    <div id="drum-pads">
+      {drumPads.map(({ keyIs, name, src }) => (
+        <DrumPad
+          key={keyIs}
+          keyIs={keyIs}
+          name={name}
+          src={src}
+          handleDisplay={handleDisplay}
+        />
+      ))}
+    </div>
+  );
 };
 
 DrumPads.propTypes = {

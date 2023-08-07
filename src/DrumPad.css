@@ -1,0 +1,19 @@
+.drum-pad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 12rem;
+  height: 12rem;
+
+  border: 0.5rem solid #333;
+  border-radius: 2rem;
+
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.drum-pad:active,
+.drum-pad:focus {
+  border-color: aqua;
+}
