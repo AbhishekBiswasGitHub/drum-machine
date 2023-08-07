@@ -1,0 +1,10 @@
+#drum-machine {
+  width: 44rem;
+  height: 51rem;
+
+  padding: 3rem;
+
+  border-radius: 2rem;
+
+  background-color: #000;
+}
