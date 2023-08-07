@@ -1,0 +1,15 @@
+#display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38rem;
+  height: 4rem;
+
+  margin-top: 3rem;
+
+  border: 0.5rem solid #333;
+  border-radius: 2rem;
+
+  font-size: 2rem;
+}
